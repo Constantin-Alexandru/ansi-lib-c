@@ -14,6 +14,10 @@
 #ifndef ANSI_LIB_H
 #define ANSI_LIB_H
 
+#define VERSION_MAJOR 1
+#define VERSION_MINOR 0
+#define VERSION_PATCH 3
+
 #include <stdio.h>
 
 #if defined(_WIN32)
@@ -59,6 +63,8 @@ static void setupConsole(void) {
 #define ANSI_LIB_WINDOWS_INIT() setupConsole()
 
 #endif // _WIN32
+
+#define ANSI_LIB_WINDOWS_INIT()
 
 #define CONTROL_SEQUENCE "\x1b["
 
